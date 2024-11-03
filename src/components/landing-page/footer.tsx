@@ -15,7 +15,7 @@ const Footer = () => {
         <p className="text-xs opacity-80 ">© 2023 Food Platter, Inc.</p>
       </section>
       <section className="flex gap-3 items-center">
-        <Link href={""}>
+        <Link href={"https://github.com/muhammedtahir1/food-platter"} target="_blank">
           <GitHubLogoIcon className="size-7" />
         </Link>
         <Link href={""}>

@@ -17,7 +17,7 @@ const Hero = () => {
         <p className="text-md md:text-lg opacity-75 font-extralight md:max-w-[400px]">
           Your personal money saving tool. Compare Choose and Savor the best food options near you!
         </p>
-        <Link href={""}>
+        <Link href={"/app"}>
           <Button
             className="w-36 md:w-48 font-semibold mt-4 md:mt-7 "
             variant={"default"}

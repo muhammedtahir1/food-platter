@@ -8,10 +8,10 @@ import SearchBar from "./search-bar";
 const Navbar = () => {
 	return (
 		<header className="py-3 md:py-4 flex items-center justify-between border-b border-primary">
-			<div className="flex items-center">
+			<Link href={"/"} className="flex items-center">
 				<Logo />
 				<h2 className="tracking-tighter ">Food <span className="text-primary"> Platter</span></h2>
-			</div>
+			</Link>
 
 			<div className="hidden md:block">
 				<SearchBar />
