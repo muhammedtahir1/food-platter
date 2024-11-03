@@ -10,4 +10,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
+model Food {
+  id             Int    @id @default(autoincrement())
+  name           String @unique
+  image          String
+  restaurantName String
+  swiggyPrice    Int
+  zomatoPrice    Int
+  // veg  Boolean
+}

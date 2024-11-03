@@ -25,7 +25,10 @@ Your personal price saving tool
 
     3. Prisma folder will be created & env variable for database
 
-    4. 
+    4. Create your Database model
+
+    5. Generate prisma client 
+        - or migration 
 
 
 
