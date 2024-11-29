@@ -28,7 +28,19 @@ Your personal price saving tool
     4. Create your Database model
 
     5. Generate prisma client 
-        - or migration 
+        - `pnpm install @prisma/client`
+        - (or/ notsure) migration - `npx prisma migrate dev --name init`
+
+    6. Create db.ts file in lib folder
+        - paste prisma client code - so that you dont have to import it again & again
+
+    7. To view your database / studio
+        - `pnpm exec prisma studio`
+
+    7. Perform the basic crud operations
+    
+    
+
 
 
 

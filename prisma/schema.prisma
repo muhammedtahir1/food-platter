@@ -14,8 +14,19 @@ model Food {
   id             Int    @id @default(autoincrement())
   name           String @unique
   image          String
-  restaurantName String
   swiggyPrice    Int
   zomatoPrice    Int
-  // veg  Boolean
+  restaurant Restaurant @relation(fields: [restaurantId], references: [id])
+  restaurantId  Int
+  //veg Boolean
+
+  // swiggyRating  Float
+  // zomatoRating  Float
+}
+
+model Restaurant {
+  id    Int    @id() @default(autoincrement())
+  name  String @unique
+  image String
+  foods Food[]
 }

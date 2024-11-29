@@ -2,6 +2,7 @@ import { Item } from "@radix-ui/react-dropdown-menu";
 import H1 from "./landing-page/h1";
 import RestaurantCard from "./restaurant-card";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import { getRestaurants } from "@/actions/actions";
 
 const restaurantData = [
   {
@@ -26,7 +27,12 @@ const restaurantData = [
   },
 ]
 
-export default function RestaurantSection() {
+
+export default async function RestaurantSection() {
+
+  const restaurants = await getRestaurants()
+  // console.log(restaurants);
+
   return (
     <main className="border-b  pb-10 md:pb-12 mx-4 md:mx-24">
       <H1>Famous Restaurants</H1>
@@ -39,7 +45,7 @@ export default function RestaurantSection() {
           className="w-full"
         >
           <CarouselContent >
-            {restaurantData.map((item, i) => (
+            {restaurants.map((item, i) => (
               <CarouselItem key={i} className="basis-60 md:basis-1/2 lg:basis-1/4">
                 <div className="">
 
