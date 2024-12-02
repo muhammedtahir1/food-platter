@@ -1,4 +1,4 @@
-import { addRestaurantWithFood } from "@/actions/actions";
+// import { addRestaurantWithFood } from "@/actions/actions";
 import FoodSection from "@/components/food-section";
 import Footer from "@/components/landing-page/footer";
 import Navbar from "@/components/landing-page/navbar";

@@ -46,6 +46,7 @@ import prisma from "@/lib/db";
 //                         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUkFl4-e90gihmLEM7TZZ-LTbwkWQ47VaLMQ&s",
 //                         swiggyPrice: 260,
 //                         zomatoPrice: 270,
+//                         veg: false
 //                     }
 //                 }
 //             }
@@ -84,4 +85,6 @@ export async function getFoods(){
 export async function getRestaurants(){
     return await prisma.restaurant.findMany({})
 }
+
+
 
