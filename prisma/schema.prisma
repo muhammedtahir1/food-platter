@@ -11,14 +11,14 @@ datasource db {
 }
 
 model Food {
-  id             Int    @id @default(autoincrement())
-  name           String @unique
-  image          String
-  swiggyPrice    Int
-  zomatoPrice    Int
-  restaurant Restaurant @relation(fields: [restaurantId], references: [id])
-  restaurantId  Int
-  //veg Boolean
+  id           Int        @id @default(autoincrement())
+  name         String     @unique
+  image        String
+  swiggyPrice  Int
+  zomatoPrice  Int
+  restaurant   Restaurant @relation(fields: [restaurantId], references: [id])
+  restaurantId Int
+  veg          Boolean
 
   // swiggyRating  Float
   // zomatoRating  Float
@@ -29,4 +29,11 @@ model Restaurant {
   name  String @unique
   image String
   foods Food[]
+}
+
+model User {
+  id       Int     @id() @default(autoincrement())
+  email    String  @unique
+  password String
+  name     String?
 }

@@ -38,14 +38,14 @@ import prisma from "@/lib/db";
 //         restaurantWithFood = await prisma.restaurant.create({
 //             data: {
                 
-//                 name: "Third Wave Coffee",
-//                 image: "https://images.jdmagicbox.com/v2/comp/bangalore/h6/080pxx80.xx80.181214131338.w2h6/catalogue/third-wave-coffee-roasters-whitefield-bangalore-moderate-restaurants-rs-500-to-rs-1000--tfczt1o86u.jpg",
+//                 name: "Al-Bek",
+//                 image: "https://lh3.googleusercontent.com/rpJQBlUcqOcobGQJ3dH7Ruh4-13LOnDTIWA4XpOFC-8_4Ltl91Vltbw_I-krYV0s460yxLQnysOufWFPkXbROFes4w=w1200-rw",
 //                 foods: {
 //                     create: {
-//                         name: "Coffee",
-//                         image: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-3402c4f.jpg",
-//                         swiggyPrice: 20,
-//                         zomatoPrice: 30,
+//                         name: "Chicken Biryani",
+//                         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUkFl4-e90gihmLEM7TZZ-LTbwkWQ47VaLMQ&s",
+//                         swiggyPrice: 260,
+//                         zomatoPrice: 270,
 //                     }
 //                 }
 //             }
