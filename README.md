@@ -37,11 +37,27 @@ Your personal price saving tool
     7. To view your database / studio
         - `pnpm exec prisma studio`
 
-    7. Perform the basic crud operations
+    8. Perform the basic crud operations
     
     
-
-
-
-
 7. Server Actions
+
+
+
+TODO: 
+
+1. Add veg & non-veg Symbol -> food card    ✅
+
+2. Food Card
+    - swiggy & zomato should pop up     ✅
+    - redirect to -> swiggy / zomato    ✅
+    - remove ratings                        
+
+3. Remove button Login & SignUp         ✅
+    - After user is authenticated
+    - add Logout button
+
+4. When food not found              ✅
+    - display food not found, go back to homepage
+
+5. Setup Seed file          ✅

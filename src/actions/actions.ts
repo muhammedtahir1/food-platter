@@ -38,15 +38,15 @@ import prisma from "@/lib/db";
 //         restaurantWithFood = await prisma.restaurant.create({
 //             data: {
                 
-//                 name: "Al-Bek",
-//                 image: "https://lh3.googleusercontent.com/rpJQBlUcqOcobGQJ3dH7Ruh4-13LOnDTIWA4XpOFC-8_4Ltl91Vltbw_I-krYV0s460yxLQnysOufWFPkXbROFes4w=w1200-rw",
+//                 name: "Third Wave Coffee",
+//                 image: "https://staticnew.locowiz.com/locomedia/third-wave-coffee/1657527215_1763200683.jpeg",
 //                 foods: {
 //                     create: {
-//                         name: "Chicken Biryani",
-//                         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUkFl4-e90gihmLEM7TZZ-LTbwkWQ47VaLMQ&s",
+//                         name: "Cappuccino",
+//                         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1q-KygtbfC_Q5-VjitWA3yoJKJcAKPKDAGw&s",
 //                         swiggyPrice: 260,
 //                         zomatoPrice: 270,
-//                         veg: false
+//                         veg: true
 //                     }
 //                 }
 //             }

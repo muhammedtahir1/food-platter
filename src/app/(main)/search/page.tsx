@@ -4,19 +4,19 @@ import DisplayFoods from "./display-food";
 import Navbar from "@/components/landing-page/navbar";
 
 
-export default async function page({searchParams} : {
-    searchParams: { [key: string]: string | string[] | undefined };
+export default async function page({ searchParams }: {
+  searchParams: { [key: string]: string | string[] | undefined };
 }) {
 
-    // const searchQuery = await searchParams.q
+  // const searchQuery = await searchParams.q
 
-    let food
+  let food
 
-  if(searchParams.q){
+  if (searchParams.q) {
     food = await prisma.food.findMany({
       where: {
         name: {
-          contains: searchParams.q  as string
+          contains: searchParams.q as string
         }
       },
       include: {
@@ -25,21 +25,21 @@ export default async function page({searchParams} : {
     })
     console.log(food);
   }
-  else{
+  else {
     // return {
     //   message : "Item not found"
     // }
     food = await prisma.food.findMany({
-        where: {
-          name: {
-            contains: searchParams.q as string,
-          },
+      where: {
+        name: {
+          contains: searchParams.q as string,
         },
-        include: {
-          restaurant: true
-        },
-        take: 6
-      })
+      },
+      include: {
+        restaurant: true
+      },
+      take: 6
+    })
   }
 
   // console.log(food);
@@ -47,10 +47,13 @@ export default async function page({searchParams} : {
 
   return (
     <main className="mx-4 md:mx-20">
-        {/* <SearchBar/> */}
-        <Navbar/>
-        <DisplayFoods data={food} />
-        
+      <Navbar />
+      <div className="md:hidden mt-5">
+        <SearchBar />
+
+      </div>
+      <DisplayFoods data={food} />
+
     </main>
   )
 }

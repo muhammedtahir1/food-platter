@@ -1,9 +1,8 @@
-// import { addRestaurantWithFood } from "@/actions/actions";
 import FoodSection from "@/components/food-section";
 import Footer from "@/components/landing-page/footer";
 import Navbar from "@/components/landing-page/navbar";
 import RestaurantSection from "@/components/restaurant-section";
-import prisma from "@/lib/db";
+
 
 export default async function Page({searchParams} : {
   searchParams: { [key: string]: string | string[] | undefined };
