@@ -32,7 +32,7 @@ export default function FoodCard({ data }: FoodCardProps) {
 
     return (
         <Card className="w-64 h-96 overflow-hidden">
-            <CardHeader className="px-6 pt-3 pb-2 space-y-[2px] h-[14%]">
+            <CardHeader className="px-6 pt-2 pb-2 space-y-[2px] h-[14%]">
                 <div className="flex justify-between items-center">
                     <div className="flex flex-col">
                         <CardTitle>{data.name}</CardTitle>

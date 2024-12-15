@@ -42,6 +42,8 @@ Your personal price saving tool
     
 7. Server Actions
 
+8. Seed script
+    - pnpm exec prisma db seed
 
 
 TODO: 
