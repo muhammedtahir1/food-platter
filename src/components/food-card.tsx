@@ -84,9 +84,9 @@ export default function FoodCard({ data }: FoodCardProps) {
                         <SiSwiggy size={30} className="text-orange-500 p-0 m-0" />
                         <div className="flex flex-col gap-4 items-center justify-center">
                             <h2 className="font-semibold text-2xl">₹{data.swiggyPrice}</h2>
-                            <p className="flex items-center justify-center gap-1 text-sm -mt-1">
+                            {/* <p className="flex items-center justify-center gap-1 text-sm -mt-1">
                                 4.3 <Star className="text-primary fill-primary" size={14} />
-                            </p>
+                            </p> */}
                         </div>
                     </div>
 
@@ -99,9 +99,9 @@ export default function FoodCard({ data }: FoodCardProps) {
                         <SiZomato size={48} className="text-red-500 p-0 m-0" />
                         <div className="flex flex-col gap-4 items-center justify-center">
                             <h2 className="font-semibold text-2xl">₹{data.zomatoPrice}</h2>
-                            <p className="flex items-center text-sm -mt-1">
+                            {/* <p className="flex items-center text-sm -mt-1">
                                 4.3 <CiStar className="text-primary" size={20} />
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>

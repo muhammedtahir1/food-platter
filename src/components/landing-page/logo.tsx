@@ -1,5 +1,6 @@
 import Image from "next/image";
-import logoC from "../../../public/logo-black-256x256.png"
+// import logoC from "../../../public/logo-black-256x256.png"
+import logoC from "../../../public/logo-base-1200x1200.png"
 
 export default function Logo() {
   return (
