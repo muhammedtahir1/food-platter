@@ -18,7 +18,7 @@ const Footer = () => {
         <Link href={"https://github.com/muhammedtahir1/food-platter"} target="_blank">
           <GitHubLogoIcon className="size-7" />
         </Link>
-        <Link href={""}>
+        <Link href={"https://x.com/home"}>
           <FaXTwitter className="size-7" />
         </Link>
       </section>

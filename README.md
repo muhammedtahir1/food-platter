@@ -14,8 +14,6 @@ Your personal price saving tool
 4. Create a design, get some inspiration
 
 5. Start making the UI first
-    - 
-    - 
 
 6. Backend
     1. Install prisma 
@@ -46,7 +44,7 @@ Your personal price saving tool
     - pnpm exec prisma db seed
 
 
-TODO: 
+<!-- TODO: 
 
 1. Add veg & non-veg Symbol -> food card    ✅
 
@@ -62,4 +60,4 @@ TODO:
 4. When food not found              ✅
     - display food not found, go back to homepage
 
-5. Setup Seed file          ✅
+5. Setup Seed file          ✅ -->
