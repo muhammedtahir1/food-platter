@@ -4,9 +4,11 @@ import Navbar from "@/components/landing-page/navbar";
 import RestaurantSection from "@/components/restaurant-section";
 
 
-export default async function Page({searchParams} : {
-  searchParams: { [key: string]: string | string[] | undefined };
-}) {
+export default async function Page(
+//   {searchParams} : {
+//   searchParams: { [key: string]: string | string[] | undefined };
+// }
+) {
 
   // console.log("🎈",searchParams.q);
   

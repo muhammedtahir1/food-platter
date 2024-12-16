@@ -1,5 +1,5 @@
 
-import { getFoods, getFoodsWithRestaurant } from "@/actions/actions";
+import { getFoods} from "@/actions/actions";
 import FoodCard from "./food-card";
 import H1 from "./landing-page/h1";
 

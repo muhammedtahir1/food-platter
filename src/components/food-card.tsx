@@ -4,8 +4,6 @@ import { GrLocationPin } from "react-icons/gr";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { CiStar } from "react-icons/ci";
-import { Star } from 'lucide-react';
 import { useState } from "react";
 import { SiSwiggy, SiZomato } from "react-icons/si";
 import Link from "next/link";

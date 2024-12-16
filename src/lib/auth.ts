@@ -1,9 +1,6 @@
-import NextAuth, { AuthError, CredentialsSignin } from "next-auth";
+import NextAuth, { CredentialsSignin } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { signInFormSchema } from "@/types/index";
 import prisma from "@/lib/db";
-import { z } from "zod";
-import { getUserDetails } from "@/actions/auth.action";
  
 class CustomAuthError extends CredentialsSignin {
   code = "Something went wrong while authenticating";
@@ -58,7 +55,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       return token;
     },
     // used when client useSession is called
-    session: async ({ session, token, user }) => {
+    session: async ({ session, token }) => {
       if (session?.user) {
         session.user.id = token.id as string;
       }

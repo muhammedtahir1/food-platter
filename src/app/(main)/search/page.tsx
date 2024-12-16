@@ -7,9 +7,6 @@ import Navbar from "@/components/landing-page/navbar";
 export default async function page({ searchParams }: {
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
-
-  // const searchQuery = await searchParams.q
-
   let food
 
   if (searchParams.q) {

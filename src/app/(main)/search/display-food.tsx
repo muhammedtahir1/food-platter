@@ -1,7 +1,7 @@
 "use client"
-import FoodCard, { FoodCardProps } from '@/components/food-card'
+import FoodCard from '@/components/food-card'
 import H1 from '@/components/landing-page/h1'
-import { usePathname, useSearchParams } from 'next/navigation'
+import { useSearchParams } from 'next/navigation'
 import React from 'react'
 
 type DisplayFoodType = {

@@ -1,4 +1,3 @@
-import { Item } from "@radix-ui/react-dropdown-menu";
 import H1 from "./landing-page/h1";
 import RestaurantCard from "./restaurant-card";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
